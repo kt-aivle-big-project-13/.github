@@ -45,52 +45,61 @@ FinAudit은 역할이 뚜렷하게 나뉜 세 개의 서버가 함께 움직입�
 ## 개발 스택
 
 ### 프론트엔드
-| 구분 | 기술 |
-|---|---|
-| 언어 | TypeScript |
-| 프레임워크 | React 19 |
-| 빌드 도구 | Vite |
-| UI 라이브러리 | Ant Design |
-| 라우팅 | React Router |
-| 서버 상태 관리 | TanStack Query |
-| 클라이언트 상태 관리 | Zustand |
-| 폼 | React Hook Form + Zod |
-| HTTP 클라이언트 | Axios |
-| 인증 | JWT (Access / Refresh) |
-| 린트 / 포맷 | ESLint + Prettier |
-<br>
+
+<table width="100%">
+<thead><tr><th width="140">구분</th><th>기술</th></tr></thead>
+<tbody>
+<tr><td>언⁠어</td><td>TypeScript</td></tr>
+<tr><td>프⁠레⁠임⁠워⁠크</td><td>React 19</td></tr>
+<tr><td>빌⁠드⁠ ⁠도⁠구</td><td>Vite</td></tr>
+<tr><td>U⁠I⁠ ⁠라⁠이⁠브⁠러⁠리</td><td>Ant Design</td></tr>
+<tr><td>라⁠우⁠팅</td><td>React Router</td></tr>
+<tr><td>서⁠버⁠ ⁠상⁠태⁠ ⁠관⁠리</td><td>TanStack Query</td></tr>
+<tr><td>클⁠라⁠이⁠언⁠트⁠ ⁠상⁠태⁠ ⁠관⁠리</td><td>Zustand</td></tr>
+<tr><td>폼</td><td>React Hook Form + Zod</td></tr>
+<tr><td>H⁠T⁠T⁠P⁠ ⁠클⁠라⁠이⁠언⁠트</td><td>Axios</td></tr>
+<tr><td>인⁠증</td><td>JWT (Access / Refresh)</td></tr>
+<tr><td>린⁠트⁠/⁠포⁠맷</td><td>ESLint + Prettier</td></tr>
+</tbody>
+</table>
 
 ### 백엔드
-| 구분 | 기술 |
-|---|---|
-| 언어 | Java 21 |
-| 프레임워크 | Spring Boot 4.0.7 (Web MVC, Data JPA, Security, Validation) |
-| 데이터베이스 | PostgreSQL (+ pgvector) |
-| 마이그레이션 | Flyway |
-| 캐시 | Redis |
-| 인증 | JWT (jjwt) |
-| 스토리지 | AWS S3 (로컬은 MinIO) |
-| API 문서화 | springdoc-openapi (Swagger UI) |
-| 모니터링 | Micrometer, Prometheus, Grafana |
-| 테스트 | JUnit 5, Mockito, Testcontainers |
-| 부하 테스트 | k6 |
-| 빌드 도구 | Gradle |
-| CI/CD & 인프라 | GitHub Actions, Docker, Docker Hub, AWS EC2 |
-<br>
+
+<table width="100%">
+<thead><tr><th width="140">구분</th><th>기술</th></tr></thead>
+<tbody>
+<tr><td>언⁠어</td><td>Java 21</td></tr>
+<tr><td>프⁠레⁠임⁠워⁠크</td><td>Spring Boot 4.0.7 (Web MVC, Data JPA, Security, Validation)</td></tr>
+<tr><td>데⁠이⁠터⁠베⁠이⁠스</td><td>PostgreSQL (+ pgvector)</td></tr>
+<tr><td>마⁠이⁠그⁠레⁠이⁠션</td><td>Flyway</td></tr>
+<tr><td>캐⁠시</td><td>Redis</td></tr>
+<tr><td>인⁠증</td><td>JWT (jjwt)</td></tr>
+<tr><td>스⁠토⁠리⁠지</td><td>AWS S3 (로컬은 MinIO)</td></tr>
+<tr><td>A⁠P⁠I⁠ ⁠문⁠서⁠화</td><td>springdoc-openapi (Swagger UI)</td></tr>
+<tr><td>모⁠니⁠터⁠링</td><td>Micrometer, Prometheus, Grafana</td></tr>
+<tr><td>테⁠스⁠트</td><td>JUnit 5, Mockito, Testcontainers</td></tr>
+<tr><td>부⁠하⁠ ⁠테⁠스⁠트</td><td>k6</td></tr>
+<tr><td>빌⁠드⁠ ⁠도⁠구</td><td>Gradle</td></tr>
+<tr><td>C⁠I⁠/⁠C⁠D⁠ ⁠&⁠ ⁠인⁠프⁠라</td><td>GitHub Actions, Docker, Docker Hub, AWS EC2</td></tr>
+</tbody>
+</table>
 
 ### AI 서버
-| 구분 | 기술 |
-|---|---|
-| 언어 | Python 3.13 |
-| 프레임워크 | FastAPI, Uvicorn |
-| 데이터 검증 / 설정 | Pydantic v2 |
-| HTTP 클라이언트 | httpx |
-| LLM 연동 | OpenAI 호환 Chat Completions API |
-| 객체 스토리지 | boto3 (AWS S3 / MinIO) |
-| 머신러닝 | XGBoost, Fairlearn, SHAP, LIME, scikit-learn |
-| 리포트 생성 | Jinja2, Playwright(PDF 변환), python-docx |
-| 테스트 | pytest |
 
+<table width="100%">
+<thead><tr><th width="140">구분</th><th>기술</th></tr></thead>
+<tbody>
+<tr><td>언⁠어</td><td>Python 3.13</td></tr>
+<tr><td>프⁠레⁠임⁠워⁠크</td><td>FastAPI, Uvicorn</td></tr>
+<tr><td>데⁠이⁠터⁠ ⁠검⁠증⁠/⁠설⁠정</td><td>Pydantic v2</td></tr>
+<tr><td>H⁠T⁠T⁠P⁠ ⁠클⁠라⁠이⁠언⁠트</td><td>httpx</td></tr>
+<tr><td>L⁠L⁠M⁠ ⁠연⁠동</td><td>OpenAI 호환 Chat Completions API</td></tr>
+<tr><td>객⁠체⁠ ⁠스⁠토⁠리⁠지</td><td>boto3 (AWS S3 / MinIO)</td></tr>
+<tr><td>머⁠신⁠러⁠닝</td><td>XGBoost, Fairlearn, SHAP, LIME, scikit-learn</td></tr>
+<tr><td>리⁠포⁠트⁠ ⁠생⁠성</td><td>Jinja2, Playwright(PDF 변환), python-docx</td></tr>
+<tr><td>테⁠스⁠트</td><td>pytest</td></tr>
+</tbody>
+</table>
 <br><br>
 
 ## 디자인 시안
