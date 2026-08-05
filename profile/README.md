@@ -2,10 +2,10 @@
 <img width="1012" height="213" alt="image" src="https://github.com/user-attachments/assets/024e4193-5f12-4f30-a97a-d8f8367dcc9d" />
 
 **AI 기본법이 2026년 2월에 개정**되고, **금융 7대 가이드라인이 2026년 6월에 만들어지면서** 신용평가 AI가 이를 위반하는지 확인하는 작업은 새로운 숙제로 떠오르게 되었습니다 <br>
-금융기관이 신용평가에 AI를 쓰기 시작하면서, **이 모델이 특정 집단을 차별하지 않는다**는 걸 증명하는 일이 새로운 숙제가 됐습니다. 
+금융기관이 신용평가에 AI를 쓰기 시작하면서, **이 모델이 특정 집단을 차별하지 않는다**는 걸 증명하는 일이 새로운 숙제가 됐습니다.
 담당자가 데이터를 직접 뜯어보고, 법령 조항을 하나하나 대조하고, 보고서를 손으로 작성하던 과정을 통째로 자동화한 것이 **FinAudit**입니다.
 
-모델과 감사 데이터를 올리기만 하면, FinAudit이 대신 물어봐 줍니다 
+모델과 감사 데이터를 올리기만 하면, FinAudit이 대신 물어봐 줍니다
 - 이 모델은 성별·연령 같은 **보호 속성에 대해 공정하게 판단**하고 있는지
 - **왜 이런 결과가 나왔는지 설명**할 수 있는지
 - **AI 기본법이 요구하는 조항들을 실제로 충족**하고 있는지
@@ -13,7 +13,7 @@
 
 한마디로 FinAudit은 "AI가 내린 결정을 사람이 설명할 수 있게" 만들어주는 플랫폼입니다. <br>
 **고영향 AI 여부를 미리 진단하는 것부터, 감사 실행, 규제 자가점검, 보고서 생성, 이의제기 대응문서 초안 생성, 운영 모니터링**까지 <br>
-신용평가 AI를 규제 앞에 떳떳하게 세우는 데 필요한 전 과정을 하나의 화면 흐름으로 이어갑니다. 
+신용평가 AI를 규제 앞에 떳떳하게 세우는 데 필요한 전 과정을 하나의 화면 흐름으로 이어갑니다.
 
 <br><br>
 
@@ -22,18 +22,18 @@
 
 FinAudit은 역할이 뚜렷하게 나뉜 세 개의 서버가 함께 움직입니다.
 
-사용자가 마주하는 화면은 **프론트엔드**가 맡습니다. 
+사용자가 마주하는 화면은 **프론트엔드**가 맡습니다.
 - 모델을 업로드하고, 감사가 진행되는 과정을 지켜보고, 완성된 보고서를 내려받는 모든 화면이 여기서 만들어집니다.
 - 프론트엔드는 화면을 그리는 데만 집중할 뿐, 실제 판단은 전혀 하지 않습니다.
 <br>
 
-모든 요청은 **백엔드**를 거칩니다. 
+모든 요청은 **백엔드**를 거칩니다.
 - 회원 인증은 물론, 어떤 모델이 등록되어 있는지,
 - 감사가 어디까지 진행됐는지,
 - 어떤 법령 조항을 충족했는지 같은 데이터를 기록하고 관리하는 것도 백엔드의 몫입니다.
 <br>
 
-그리고 실제로 숫자를 계산하는 일은 **AI 서버**가 전담합니다. 
+그리고 실제로 숫자를 계산하는 일은 **AI 서버**가 전담합니다.
 - 백엔드로부터 모델과 데이터를 넘겨받으면, 이 AI 서버가 공정성 지표를 계산하고, 모델이 왜 그런 판단을 내렸는지 설명 가능성을 분석하고, 그 결과를 바탕으로 보고서 문장까지 작성합니다.
 - 사용자나 프론트엔드가 AI 서버를 직접 호출하는 일은 없습니다 -> 항상 백엔드가 중간에서 필요한 만큼만 요청을 보내고 결과를 받아옵니다.
 <br>
@@ -44,12 +44,10 @@ FinAudit은 역할이 뚜렷하게 나뉜 세 개의 서버가 함께 움직입�
 
 ## 개발 스택
 
-### 프론트엔드
-
 <table width="100%">
-<thead><tr><th width="140">구분</th><th>기술</th></tr></thead>
+<thead><tr><th width="110">영역</th><th width="140">구분</th><th>기술</th></tr></thead>
 <tbody>
-<tr><td>언⁠어</td><td>TypeScript</td></tr>
+<tr><td rowspan="11">프⁠론⁠트⁠엔⁠드</td><td>언⁠어</td><td>TypeScript</td></tr>
 <tr><td>프⁠레⁠임⁠워⁠크</td><td>React 19</td></tr>
 <tr><td>빌⁠드⁠ ⁠도⁠구</td><td>Vite</td></tr>
 <tr><td>U⁠I⁠ ⁠라⁠이⁠브⁠러⁠리</td><td>Ant Design</td></tr>
@@ -60,15 +58,7 @@ FinAudit은 역할이 뚜렷하게 나뉜 세 개의 서버가 함께 움직입�
 <tr><td>H⁠T⁠T⁠P⁠ ⁠클⁠라⁠이⁠언⁠트</td><td>Axios</td></tr>
 <tr><td>인⁠증</td><td>JWT (Access / Refresh)</td></tr>
 <tr><td>린⁠트⁠/⁠포⁠맷</td><td>ESLint + Prettier</td></tr>
-</tbody>
-</table>
-
-### 백엔드
-
-<table width="100%">
-<thead><tr><th width="140">구분</th><th>기술</th></tr></thead>
-<tbody>
-<tr><td>언⁠어</td><td>Java 21</td></tr>
+<tr><td rowspan="13">백⁠엔⁠드</td><td>언⁠어</td><td>Java 21</td></tr>
 <tr><td>프⁠레⁠임⁠워⁠크</td><td>Spring Boot 4.0.7 (Web MVC, Data JPA, Security, Validation)</td></tr>
 <tr><td>데⁠이⁠터⁠베⁠이⁠스</td><td>PostgreSQL (+ pgvector)</td></tr>
 <tr><td>마⁠이⁠그⁠레⁠이⁠션</td><td>Flyway</td></tr>
@@ -81,15 +71,7 @@ FinAudit은 역할이 뚜렷하게 나뉜 세 개의 서버가 함께 움직입�
 <tr><td>부⁠하⁠ ⁠테⁠스⁠트</td><td>k6</td></tr>
 <tr><td>빌⁠드⁠ ⁠도⁠구</td><td>Gradle</td></tr>
 <tr><td>C⁠I⁠/⁠C⁠D⁠ ⁠&⁠ ⁠인⁠프⁠라</td><td>GitHub Actions, Docker, Docker Hub, AWS EC2</td></tr>
-</tbody>
-</table>
-
-### AI 서버
-
-<table width="100%">
-<thead><tr><th width="140">구분</th><th>기술</th></tr></thead>
-<tbody>
-<tr><td>언⁠어</td><td>Python 3.13</td></tr>
+<tr><td rowspan="9">A⁠I⁠ ⁠서⁠버</td><td>언⁠어</td><td>Python 3.13</td></tr>
 <tr><td>프⁠레⁠임⁠워⁠크</td><td>FastAPI, Uvicorn</td></tr>
 <tr><td>데⁠이⁠터⁠ ⁠검⁠증⁠/⁠설⁠정</td><td>Pydantic v2</td></tr>
 <tr><td>H⁠T⁠T⁠P⁠ ⁠클⁠라⁠이⁠언⁠트</td><td>httpx</td></tr>
@@ -100,11 +82,11 @@ FinAudit은 역할이 뚜렷하게 나뉜 세 개의 서버가 함께 움직입�
 <tr><td>테⁠스⁠트</td><td>pytest</td></tr>
 </tbody>
 </table>
+
 <br><br>
 
 ## 디자인 시안
-
-
+추가 예정
 
 
 <br><br>
