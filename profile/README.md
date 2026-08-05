@@ -1,5 +1,5 @@
 # 신용평가 AI 규제준수 자동감사 플랫폼(FinAudit)
----
+<img width="1012" height="213" alt="image" src="https://github.com/user-attachments/assets/024e4193-5f12-4f30-a97a-d8f8367dcc9d" />
 
 **AI 기본법이 2026년 2월에 개정**되고, **금융 7대 가이드라인이 2026년 6월에 만들어지면서** 신용평가 AI가 이를 위반하는지 확인하는 작업은 새로운 숙제로 떠오르게 되었습니다 <br>
 금융기관이 신용평가에 AI를 쓰기 시작하면서, **이 모델이 특정 집단을 차별하지 않는다**는 걸 증명하는 일이 새로운 숙제가 됐습니다. 
@@ -18,7 +18,6 @@
 <br><br>
 
 ## 시스템 아키텍처
----
 <img width="1731" height="908" alt="SW 아키텍쳐" src="https://github.com/user-attachments/assets/e2c2eaed-12bb-4453-b527-7390defd02ea" />
 
 FinAudit은 역할이 뚜렷하게 나뉜 세 개의 서버가 함께 움직입니다.
@@ -44,9 +43,6 @@ FinAudit은 역할이 뚜렷하게 나뉜 세 개의 서버가 함께 움직입�
 <br><br>
 
 ## 개발 스택
----
-
-FinAudit은 프론트엔드·백엔드·AI 서버, 세 레포로 나뉘어 개발됐고 각 영역이 맡은 문제에 맞는 스택을 독립적으로 선택했습니다.
 
 ### 프론트엔드
 | 구분 | 기술 |
@@ -97,14 +93,23 @@ FinAudit은 프론트엔드·백엔드·AI 서버, 세 레포로 나뉘어 개�
 
 <br><br>
 
-
-<br><br>
-
 ## 디자인 시안
----
+
+
 
 
 <br><br>
 
 ## 팀원 정보
----
+
+| Name | GitHub | 만든 기능 |
+|---|---|---|
+| 김⁠다⁠애 | [<img src="https://github.com/fluidicon.png" width="16"/> a⁠s⁠i⁠a⁠s⁠y⁠o⁠u⁠a⁠s⁠i⁠a⁠s](https://github.com/asiasyouasias) | • 법령 조항 pgvector 유사도 검색(RAG)<br>• 법령 조문 임베딩 생성 파이프라인<br>• AI 기본법 조문 스키마·시딩 데이터<br>• AI 기본법 개정 자동 추적·알림<br>• 자가점검 결과-법령 조항 자동 매핑 서비스<br>• 법령 매핑 조회 API(항 단위 근거·요약 라벨)<br>• STEP4 규제 자가점검 응답 저장/조회 API<br>• 감사 이력 목록 조회 API<br>• 모델 목록 조회 API<br>• 감사 데이터셋 재사용(모델 계열 공유)<br>• 감사 취소·재시도 API 및 동시성 처리<br>• 서버 재시작 시 고아 감사 자동 실패 처리<br>• 감사 실패 인앱 알림(백엔드+프론트 알람 UI) |
+| 김⁠다⁠진 | [<img src="https://github.com/fluidicon.png" width="16"/> D⁠a⁠j⁠i⁠n⁠-⁠0⁠1](https://github.com/Dajin-01) | • SHAP 설명가능성 분석 파이프라인 FastAPI 연동<br>• SHAP REVIEW 판정 단계 추가<br>• 설명가능성 HTML·PDF·Word 리포트 생성·저장·조회·다운로드<br>• 고영향 AI 사전진단 PDF·Word 보고서 생성·다운로드<br>• 이의제기 대응문서 전역 SHAP·LLM 연동<br>• SHAP WARNING 상태 표시·연동<br>• 감사 결과 지표 도움말 툴팁<br>• 헤더 로고·회원탈퇴 팝업 등 UI 개선 |
+| 김⁠석⁠주 | [<img src="https://github.com/fluidicon.png" width="16"/> B⁠a⁠n⁠a⁠n⁠a⁠-⁠b⁠o⁠s⁠s](https://github.com/Banana-boss) | • 규제 자가점검(STEP4) 21문항·7그룹 아코디언 UI<br>• STEP4 자가점검 백엔드 확장 및 실제 API 연결<br>• 자가점검 건너뛰기 확인 모달<br>• 모델 업로드·감사 실행 화면(신규/버전업 플로우)<br>• 감사 세부정보 상세보기 페이지<br>• 감사 산출물 관리 페이지<br>• 메인페이지·기능 살펴보기 페이지 구현<br>• 홈 화면 최근/진행중 감사 카드<br>• 마이페이지 구현<br>• 회원가입·로그인·자동로그인·권한 체계<br>• SHAP 전역 피처 중요도(TOP N) 조회 API<br>• Redis 캐시 역직렬화 오류 수정<br>• 개선권고가이드 노력의무 섹션 분리 |
+| 오⁠희⁠주 | [<img src="https://github.com/fluidicon.png" width="16"/> m⁠o⁠m⁠i⁠j⁠u](https://github.com/momiju) | • 회원가입·로그인 인증 플로우(폼·API·자동로그인)<br>• reCAPTCHA 적용<br>• 비밀번호 재설정·표시 토글<br>• 최종 감사 보고서 생성 파이프라인(OpenAI LLM 클라이언트, 프롬프트 빌더·템플릿)<br>• 최종 감사 보고서 생성·다운로드 API<br>• 플로팅 챗봇 UI<br>• 이의제기 대응문서 페이지<br>• CSV 업로드 검증·도움말 메시지<br>• 보고서 카드 레이아웃 개선<br>• 자가점검 건너뛰기 UI 처리<br>• 인증·사용자 테스트 코드 작성 |
+| 정⁠민⁠호 | [<img src="https://github.com/fluidicon.png" width="16"/> C⁠M⁠I⁠N⁠O⁠9⁠9](https://github.com/CMINO99) | • 대시보드 집계 API 구현<br>• 대시보드 감사 내역 전체조회·더보기/접기<br>• 대시보드 API 모델 버전 표시<br>• 대시보드 화면 구현 및 문구 개선<br>• 고영향 AI 사전진단 페이지 구현·플로우 수정 |
+| 조⁠영⁠웅 | [<img src="https://github.com/fluidicon.png" width="16"/> J⁠o⁠J⁠i⁠m⁠i](https://github.com/JoJimi) | • 게시판 기능(백엔드 API+프론트 UI)<br>• 마이페이지(프로필 조회·수정, 비밀번호 변경, 회원탈퇴)<br>• 알림센터 인프라 구축(감사완료·법령개정 알림, 알림벨 UI, 알림 초기화)<br>• 감사 실행 플로우 UI(모델·데이터셋 업로드, 민감변수 선택, Validation 데이터셋)<br>• 공정성 지표 확장(Proportional/FDR/FOR/FPR Parity)<br>• SHAP·Fairlearn 분석 병렬 실행 전환<br>• 챗봇 UI/응답 개선(인용 표기, 근거 충실도, enum 한글화)<br>• Redis 캐싱 적용<br>• k6 부하테스트 스크립트 작성<br>• MinIO 로컬 개발환경 도입<br>• Swagger UI 적용·패키지 구조 리팩터링 |
+| 황⁠민⁠서 | [<img src="https://github.com/fluidicon.png" width="16"/> M⁠i⁠n⁠s⁠e⁠o⁠H⁠w⁠a⁠n⁠g](https://github.com/MinseoHwang) | • XGBoost 위험점수·승인임계값 산출<br>• 감사 입력파일 검증<br>• Fairlearn 공정성 지표 계산 엔진(7종)<br>• 공정성 감사 API(S3 연동)<br>• OpenAI 호환 LLM 연동(AI 서버 클라이언트)<br>• SHAP 설명가능성 HTML 리포트 생성<br>• 편향진단·설명가능성·규제준수판정서·개선권고가이드·최종감사보고서 5종 리포트 생성(PDF·Word 변환 포함)<br>• 리포트 저장·조회·다운로드 API(백엔드)<br>• 감사 질의응답 챗봇(RAG 법령 인용 결합)<br>• 감사 결과 버전 비교, 보고서 병렬 사전생성 등 프론트 개선 |
+
+
