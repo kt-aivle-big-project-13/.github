@@ -1,4 +1,4 @@
-## 메인 / 기능 살펴보기 페이지 
+![메인 / 기능 살펴보기 페이지](https://img.shields.io/badge/메인_%2F_기능_살펴보기_페이지-4F46E5?style=for-the-badge)
 <img width="1268" height="670" alt="image" src="https://github.com/user-attachments/assets/f1da0164-ef8f-421c-9019-a95c8cfb94a3" />
 
 <img width="1267" height="675" alt="image" src="https://github.com/user-attachments/assets/19119a5c-f774-4627-9c51-87776e440e8f" />
@@ -6,7 +6,7 @@
 
 <br><br>
 
-## 로그인/회원가입/비밀번호 찾기 페이지
+![로그인/회원가입/비밀번호 찾기 페이지](https://img.shields.io/badge/로그인%2F회원가입%2F비밀번호_찾기_페이지-16A34A?style=for-the-badge)
 <img width="1266" height="665" alt="image" src="https://github.com/user-attachments/assets/1f7f1b5b-5a80-49ac-a4a4-6a8adb2a7029" />
 
 <img width="1268" height="676" alt="image" src="https://github.com/user-attachments/assets/a801bdcd-7917-4117-a0be-13ca608dfcf3" />
@@ -16,7 +16,8 @@
 
 <br><br>
 
-## 감사 페이지 (STEP1 ~ STEP4)
+![감사 페이지 (STEP1~STEP4)](https://img.shields.io/badge/감사_페이지_(STEP1~STEP4)-DC2626?style=for-the-badge)
+
 **STEP1 고영향 AI 사전진단**
 <img width="1267" height="665" alt="image" src="https://github.com/user-attachments/assets/55bd43ff-5032-49a6-886f-a7cc46e9ce50" />
 
@@ -48,24 +49,26 @@
 
 <br><br>
 
-## 대시보드
+![대시보드](https://img.shields.io/badge/대시보드-CA8A04?style=for-the-badge)
+<img width="1277" height="2192" alt="screencapture-localhost-5173-dashboard-2026-08-07-14_34_25" src="https://github.com/user-attachments/assets/960d1ba4-9283-4bc5-8ed3-1f79b2640581" />
 
 
 <br><br>
 
-## 이의제기 대응 문서 초안 생성 페이지
+![이의제기 대응 문서 초안 생성 페이지](https://img.shields.io/badge/이의제기_대응_문서_초안_생성_페이지-9333EA?style=for-the-badge)
 
-<img width="2561" height="1395" alt="screencapture-localhost-5173-audit-2026-08-07-13_47_16" src="https://github.com/user-attachments/assets/31639bec-8236-42fa-9437-bf2c192358ca" />
+<img width="2561" height="2273" alt="screencapture-localhost-5173-objections-2026-08-07-14_03_25" src="https://github.com/user-attachments/assets/4d740dcb-ede4-4880-b363-457ce205b002" />
 
 <img width="2561" height="1887" alt="screencapture-localhost-5173-objections-1-document-2026-08-07-13_50_47" src="https://github.com/user-attachments/assets/55c089f2-89df-427c-b980-c617d7b67ec1" />
 
+<img width="2561" height="1559" alt="screencapture-localhost-5173-objections-1-document-2026-08-07-14_02_31" src="https://github.com/user-attachments/assets/09fbd0ff-ba42-4c9d-ab02-9d35ebad743b" />
 
 
 
 
 <br><br>
 
-## 게시판
+![게시판](https://img.shields.io/badge/게시판-0891B2?style=for-the-badge)
 <img width="2561" height="1347" alt="screencapture-localhost-5173-board-2026-08-07-13_56_09" src="https://github.com/user-attachments/assets/e35c7291-a9e3-4947-a18d-f29258c629e7" />
 
 <img width="2561" height="1533" alt="screencapture-localhost-5173-board-write-2026-08-07-13_55_13" src="https://github.com/user-attachments/assets/abd6bc1f-c01e-4da3-b0fd-b3e510deb136" />
@@ -76,17 +79,18 @@
 
 <br><br>
 
-## 마이페이지
+![마이페이지](https://img.shields.io/badge/마이페이지-EA580C?style=for-the-badge)
 <img width="2561" height="2146" alt="screencapture-localhost-5173-my-page-2026-08-07-13_53_45" src="https://github.com/user-attachments/assets/bce29515-80d1-4b68-83dd-e83b6ce1953b" />
 
 <br><br>
 
-## 챗봇
+![챗봇](https://img.shields.io/badge/챗봇-DB2777?style=for-the-badge)
+
 <img width="288" height="535" alt="image" src="https://github.com/user-attachments/assets/6eb2e7ce-1b31-4bfa-84a0-87393b7bbab4" />
 
 
 <br><br>
 
-### 알림 기능
-<img width="260" height="275" alt="image" src="https://github.com/user-attachments/assets/ad9b33b5-c7d1-41a9-a696-2310f3643747" />
+![알림](https://img.shields.io/badge/알림_기능-475569?style=for-the-badge)
 
+<img width="260" height="275" alt="image" src="https://github.com/user-attachments/assets/ad9b33b5-c7d1-41a9-a696-2310f3643747" />
