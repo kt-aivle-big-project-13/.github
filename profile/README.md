@@ -18,7 +18,8 @@
 <br><br>
 
 ## 시스템 아키텍처
-<img width="1731" height="908" alt="SW 아키텍쳐" src="https://github.com/user-attachments/assets/e2c2eaed-12bb-4453-b527-7390defd02ea" />
+<img width="1733" height="908" alt="image" src="https://github.com/user-attachments/assets/7258401e-d496-4a42-b149-24b4bea2d348" />
+
 
 FinAudit은 역할이 뚜렷하게 나뉜 세 개의 서버가 함께 움직입니다.
 
